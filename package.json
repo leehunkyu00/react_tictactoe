@@ -1,6 +1,7 @@
 {
-  "name": "tictoc",
+  "name": "react_tictactoe",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
@@ -11,7 +12,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "asar": "asar pack build ttt.asar",
+    "server": "server -s build",
+    "testbuild": "cd screens & react-scripts build",
+    "testasar": "cd screens & asar pack build ttt2.asar"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +32,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "asar": "^2.0.0",
+    "server": "^1.0.18"
   }
 }
